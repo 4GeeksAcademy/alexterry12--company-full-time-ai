@@ -1,0 +1,8 @@
+create the basic structure of the website with the following lines:
+index.html (landing page)
+application.html (application/sign up form)
+styles.css (only if tailwind css isnt enough)
+validation.js (form validation)
+
+
+Start with you the landing page HTML structure, Then add tailwind styles, then work on the form, and finally implement validation.

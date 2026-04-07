@@ -1,0 +1,61 @@
+/* Tailwind-first project: keep custom CSS minimal and purposeful. */
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes hc-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hc-reveal {
+  animation: hc-fade-up 0.6s ease-out both;
+}
+
+.hc-reveal-delay-1 {
+  animation-delay: 0.08s;
+}
+
+.hc-reveal-delay-2 {
+  animation-delay: 0.16s;
+}
+
+.panel-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.panel-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px -20px rgba(15, 23, 42, 0.5);
+}
+
+.hc-medical-image {
+  display: block;
+  filter: saturate(0.96) contrast(1.03);
+  transition: transform 0.3s ease;
+}
+
+figure:hover .hc-medical-image {
+  transform: scale(1.02);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hc-reveal,
+  .hc-reveal-delay-1,
+  .hc-reveal-delay-2,
+  .panel-hover,
+  .hc-medical-image {
+    animation: none;
+    transition: none;
+  }
+}

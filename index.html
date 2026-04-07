@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthCore | Outpatient Care Across the US and UK</title>
+    <meta
+      name="description"
+      content="HealthCore provides same-day outpatient care, specialist consultations, chronic disease management, and preventive health services across the US and UK."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Merriweather:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Manrope", "sans-serif"],
+              serif: ["Merriweather", "serif"]
+            },
+            colors: {
+              brand: {
+                50: "#f0f9ff",
+                100: "#dff1ff",
+                500: "#0e7490",
+                700: "#155e75",
+                900: "#0c2f3d"
+              },
+              accent: "#d97706"
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="validation.js" defer></script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:text-brand-900"
+      data-i18n="skip_to_content"
+      >Skip to main content</a
+    >
+
+    <div class="relative overflow-hidden">
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute inset-x-0 -top-20 h-72 bg-gradient-to-r from-brand-100 via-sky-100 to-emerald-100 blur-3xl"
+      ></div>
+
+      <header class="relative z-10 border-b border-slate-200/70 bg-white/85 backdrop-blur" role="banner">
+        <div class="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+          <div class="flex items-center gap-3">
+            <div
+              class="grid h-10 w-10 place-items-center rounded-xl bg-brand-700 text-sm font-bold text-white"
+              aria-hidden="true"
+            >
+              HC
+            </div>
+            <p class="font-serif text-2xl font-black text-brand-900">HealthCore</p>
+          </div>
+
+          <nav aria-label="Primary navigation" class="order-3 flex basis-full items-center justify-center gap-4 border-t border-slate-200/80 pt-3 text-sm sm:gap-6 sm:text-base md:order-2 md:basis-auto md:border-0 md:pt-0">
+            <a class="font-semibold text-slate-700 transition hover:text-brand-700" href="#home" data-i18n="nav_home">Home</a>
+            <a class="font-semibold text-slate-700 transition hover:text-brand-700" href="#services" data-i18n="nav_services">Services</a>
+            <a class="font-semibold text-slate-700 transition hover:text-brand-700" href="#locations" data-i18n="nav_locations">Locations</a>
+            <a class="font-semibold text-slate-700 transition hover:text-brand-700" href="#contact" data-i18n="nav_contact">Contact</a>
+          </nav>
+
+          <div class="order-2 flex items-center gap-2 md:order-3" role="group" aria-label="Language switcher">
+            <button
+              type="button"
+              data-set-language="en"
+              class="language-btn rounded-md border border-slate-300 px-3 py-1.5 text-sm font-semibold text-slate-700 transition hover:border-brand-500 hover:text-brand-700"
+              aria-label="Switch to English"
+            >
+              EN
+            </button>
+            <button
+              type="button"
+              data-set-language="es"
+              class="language-btn rounded-md border border-slate-300 px-3 py-1.5 text-sm font-semibold text-slate-700 transition hover:border-brand-500 hover:text-brand-700"
+              aria-label="Cambiar a español"
+            >
+              ES
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main id="main-content" class="relative z-10" role="main">
+        <section id="home" class="mx-auto max-w-6xl px-4 pb-12 pt-12 sm:px-6 lg:px-8 lg:pt-16" aria-labelledby="hero-title">
+          <div class="grid gap-8 lg:grid-cols-2 lg:items-center">
+            <div class="hc-reveal">
+              <p class="mb-3 inline-flex rounded-full bg-brand-50 px-4 py-1 text-sm font-bold uppercase tracking-wide text-brand-700" data-i18n="hero_kicker">
+                Outpatient care network
+              </p>
+              <h1 id="hero-title" class="font-serif text-4xl font-black leading-tight text-brand-900 sm:text-5xl" data-i18n="hero_headline">
+                Healthcare that fits your life
+              </h1>
+              <p class="mt-5 max-w-xl text-lg leading-relaxed text-slate-700" data-i18n="hero_subheadline">
+                12 outpatient clinics across the US and UK offering same-day appointments, extended hours, and bilingual care — so you can get the attention you need, when you need it.
+              </p>
+              <div class="mt-8 flex flex-wrap gap-3">
+                <a
+                  href="application.html"
+                  class="rounded-xl bg-brand-700 px-6 py-3 text-base font-bold text-white shadow-lg shadow-brand-700/25 transition hover:bg-brand-900"
+                  data-i18n="hero_cta"
+                  >Request an appointment</a
+                >
+                <a
+                  href="#locations"
+                  class="rounded-xl border border-slate-300 bg-white px-6 py-3 text-base font-bold text-slate-800 transition hover:border-brand-600 hover:text-brand-700"
+                  data-i18n="hero_secondary_cta"
+                  >View locations</a
+                >
+              </div>
+            </div>
+
+            <aside class="hc-reveal hc-reveal-delay-1 space-y-4" aria-label="HealthCore highlights and clinic environment">
+              <figure class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl shadow-slate-200/70">
+                <img
+                  src="https://media.medicare247.org/wp-content/uploads/2025/12/Multiple-Medical-Professionals.jpg"
+                  alt="Multiple medical professionals standing together in a modern clinical environment"
+                  class="hc-medical-image h-64 w-full object-cover sm:h-72"
+                  loading="eager"
+                  fetchpriority="high"
+                />
+              </figure>
+
+              <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/70">
+                <h2 class="font-serif text-2xl font-black text-brand-900" data-i18n="highlight_title">Trusted care, modern access</h2>
+                <ul class="mt-4 space-y-3 text-slate-700">
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent" aria-hidden="true"></span>
+                  <span data-i18n="highlight_1">Founded in Austin in 2011 and now serving communities in the US and UK.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent" aria-hidden="true"></span>
+                  <span data-i18n="highlight_2">Around 200 professionals focused on faster, patient-centered outpatient care.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent" aria-hidden="true"></span>
+                  <span data-i18n="highlight_3">HealthCore Digital is improving the full patient journey with better systems.</span>
+                </li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section id="services" class="border-y border-slate-200 bg-white/90 py-14" aria-labelledby="services-title">
+          <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <h2 id="services-title" class="font-serif text-3xl font-black text-brand-900" data-i18n="services_title">Services</h2>
+            <div class="mt-8 grid gap-6 md:grid-cols-3">
+              <article class="panel-hover rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <h3 class="text-xl font-extrabold text-slate-900" data-i18n="service_1_title">Primary Care &amp; Chronic Disease</h3>
+                <ul class="mt-3 list-disc space-y-2 pl-5 text-slate-700">
+                  <li data-i18n="service_1_item_1">Same-day appointments with primary care physicians</li>
+                  <li data-i18n="service_1_item_2">Ongoing management of diabetes, hypertension, and asthma</li>
+                </ul>
+              </article>
+
+              <article class="panel-hover rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <h3 class="text-xl font-extrabold text-slate-900" data-i18n="service_2_title">Specialist Consultations</h3>
+                <ul class="mt-3 list-disc space-y-2 pl-5 text-slate-700">
+                  <li data-i18n="service_2_item_1">Cardiology, endocrinology, pulmonology, and women's health</li>
+                  <li data-i18n="service_2_item_2">Referrals coordinated within the HealthCore network</li>
+                </ul>
+              </article>
+
+              <article class="panel-hover rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <h3 class="text-xl font-extrabold text-slate-900" data-i18n="service_3_title">Preventive Health &amp; Wellbeing</h3>
+                <ul class="mt-3 list-disc space-y-2 pl-5 text-slate-700">
+                  <li data-i18n="service_3_item_1">Screenings, vaccinations, and annual check-ups</li>
+                  <li data-i18n="service_3_item_2">Mental health counselling and psychiatry referrals</li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" aria-label="Professional clinical environment gallery">
+              <figure class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+                <img
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=80"
+                  alt="Doctor and patient discussing diagnostics on a digital screen"
+                  class="hc-medical-image h-48 w-full object-cover"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+                <img
+                  src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1000&q=80"
+                  alt="Confident doctor wearing a headset while using clinical software"
+                  class="hc-medical-image h-48 w-full object-cover"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 sm:col-span-2 lg:col-span-1">
+                <img
+                  src="https://static.wixstatic.com/media/bf7dca_4b2b1c80586846958c6eb47d6eac3c44~mv2.jpg/v1/fill/w_670,h_446,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/bf7dca_4b2b1c80586846958c6eb47d6eac3c44~mv2.jpg"
+                  alt="Professional doctor using advanced healthcare technology"
+                  class="hc-medical-image h-48 w-full object-cover"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-14" aria-labelledby="why-title">
+          <div class="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+            <div>
+              <h2 id="why-title" class="font-serif text-3xl font-black text-brand-900" data-i18n="why_title">Why HealthCore</h2>
+              <p class="mt-3 max-w-xl text-slate-700" data-i18n="why_intro">
+                We combine clinical quality with practical access, helping patients get care quickly without losing continuity.
+              </p>
+            </div>
+            <ul class="grid gap-4 sm:grid-cols-2" aria-label="HealthCore benefits">
+              <li class="panel-hover rounded-xl border border-brand-100 bg-brand-50 p-4 text-slate-800" data-i18n="why_1">Same-day appointments at most locations</li>
+              <li class="panel-hover rounded-xl border border-brand-100 bg-brand-50 p-4 text-slate-800" data-i18n="why_2">Extended hours — weekdays until 7pm or 8pm, Saturdays available</li>
+              <li class="panel-hover rounded-xl border border-brand-100 bg-brand-50 p-4 text-slate-800" data-i18n="why_3">Bilingual staff in English and Spanish at US locations</li>
+              <li class="panel-hover rounded-xl border border-brand-100 bg-brand-50 p-4 text-slate-800" data-i18n="why_4">12 clinics across Texas, Florida, Georgia, and the United Kingdom</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="pb-14" aria-label="Professional healthcare gallery">
+          <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <figure class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+                <img
+                  src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1000&q=80"
+                  alt="Doctor in a digital radiology room reviewing imaging"
+                  class="hc-medical-image h-52 w-full object-cover"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+                <img
+                  src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1000&q=80"
+                  alt="Smartly dressed physician analyzing data on a tablet"
+                  class="hc-medical-image h-52 w-full object-cover"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+                <img
+                  src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=1000&q=80"
+                  alt="Healthcare specialist using connected monitoring technology"
+                  class="hc-medical-image h-52 w-full object-cover"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+                <img
+                  src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=1000&q=80"
+                  alt="Doctor in a high-tech care setting with digital records"
+                  class="hc-medical-image h-52 w-full object-cover"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section id="locations" class="bg-brand-900 py-14 text-white" aria-labelledby="locations-title">
+          <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <h2 id="locations-title" class="font-serif text-3xl font-black" data-i18n="locations_title">US Clinic Locations</h2>
+            <p class="mt-2 text-brand-100" data-i18n="locations_note">
+              UK clinics serve a separate market and are not included in this public-facing website.
+            </p>
+
+            <div class="mt-8 hidden overflow-hidden rounded-2xl border border-white/15 lg:block">
+              <table class="w-full border-collapse text-left" aria-label="HealthCore US clinic locations">
+                <thead class="bg-white/10 text-sm uppercase tracking-wide text-brand-50">
+                  <tr>
+                    <th class="px-4 py-3" data-i18n="table_clinic">Clinic</th>
+                    <th class="px-4 py-3" data-i18n="table_city">City</th>
+                    <th class="px-4 py-3" data-i18n="table_state">State</th>
+                    <th class="px-4 py-3" data-i18n="table_phone">Phone</th>
+                    <th class="px-4 py-3" data-i18n="table_hours">Hours</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-white/10 text-sm text-brand-50">
+                  <tr class="bg-white/5">
+                    <td class="px-4 py-3">HealthCore Austin Central</td>
+                    <td class="px-4 py-3">Austin</td>
+                    <td class="px-4 py-3">TX</td>
+                    <td class="px-4 py-3">(512) 340-8800</td>
+                    <td class="px-4 py-3">Mon-Fri 7am-8pm · Sat 9am-3pm</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-3">HealthCore Austin North</td>
+                    <td class="px-4 py-3">Austin</td>
+                    <td class="px-4 py-3">TX</td>
+                    <td class="px-4 py-3">(512) 340-8810</td>
+                    <td class="px-4 py-3">Mon-Fri 8am-7pm</td>
+                  </tr>
+                  <tr class="bg-white/5">
+                    <td class="px-4 py-3">HealthCore San Antonio</td>
+                    <td class="px-4 py-3">San Antonio</td>
+                    <td class="px-4 py-3">TX</td>
+                    <td class="px-4 py-3">(210) 720-4400</td>
+                    <td class="px-4 py-3">Mon-Fri 8am-6pm · Sat 9am-1pm</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-3">HealthCore Miami</td>
+                    <td class="px-4 py-3">Miami</td>
+                    <td class="px-4 py-3">FL</td>
+                    <td class="px-4 py-3">(305) 510-7700</td>
+                    <td class="px-4 py-3">Mon-Fri 7am-8pm · Sat 9am-4pm</td>
+                  </tr>
+                  <tr class="bg-white/5">
+                    <td class="px-4 py-3">HealthCore Orlando</td>
+                    <td class="px-4 py-3">Orlando</td>
+                    <td class="px-4 py-3">FL</td>
+                    <td class="px-4 py-3">(407) 892-6600</td>
+                    <td class="px-4 py-3">Mon-Fri 8am-6pm</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-3">HealthCore Atlanta</td>
+                    <td class="px-4 py-3">Atlanta</td>
+                    <td class="px-4 py-3">GA</td>
+                    <td class="px-4 py-3">(404) 330-9900</td>
+                    <td class="px-4 py-3">Mon-Fri 8am-7pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mt-8 grid gap-4 lg:hidden" aria-label="HealthCore US clinic cards">
+              <article class="panel-hover rounded-xl bg-white/10 p-4">
+                <h3 class="font-bold">HealthCore Austin Central</h3>
+                <p>Austin, TX</p>
+                <p>(512) 340-8800</p>
+                <p>Mon-Fri 7am-8pm · Sat 9am-3pm</p>
+              </article>
+              <article class="panel-hover rounded-xl bg-white/10 p-4">
+                <h3 class="font-bold">HealthCore Austin North</h3>
+                <p>Austin, TX</p>
+                <p>(512) 340-8810</p>
+                <p>Mon-Fri 8am-7pm</p>
+              </article>
+              <article class="panel-hover rounded-xl bg-white/10 p-4">
+                <h3 class="font-bold">HealthCore San Antonio</h3>
+                <p>San Antonio, TX</p>
+                <p>(210) 720-4400</p>
+                <p>Mon-Fri 8am-6pm · Sat 9am-1pm</p>
+              </article>
+              <article class="panel-hover rounded-xl bg-white/10 p-4">
+                <h3 class="font-bold">HealthCore Miami</h3>
+                <p>Miami, FL</p>
+                <p>(305) 510-7700</p>
+                <p>Mon-Fri 7am-8pm · Sat 9am-4pm</p>
+              </article>
+              <article class="panel-hover rounded-xl bg-white/10 p-4">
+                <h3 class="font-bold">HealthCore Orlando</h3>
+                <p>Orlando, FL</p>
+                <p>(407) 892-6600</p>
+                <p>Mon-Fri 8am-6pm</p>
+              </article>
+              <article class="panel-hover rounded-xl bg-white/10 p-4">
+                <h3 class="font-bold">HealthCore Atlanta</h3>
+                <p>Atlanta, GA</p>
+                <p>(404) 330-9900</p>
+                <p>Mon-Fri 8am-7pm</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="py-14" aria-labelledby="contact-title">
+          <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <h2 id="contact-title" class="font-serif text-3xl font-black text-brand-900" data-i18n="contact_title">Contact</h2>
+            <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <article class="panel-hover rounded-xl border border-slate-200 bg-white p-4">
+                <h3 class="font-bold text-slate-900" data-i18n="contact_general_label">General enquiries</h3>
+                <p class="mt-1 text-slate-700">info@healthcore.com</p>
+              </article>
+              <article class="panel-hover rounded-xl border border-slate-200 bg-white p-4">
+                <h3 class="font-bold text-slate-900" data-i18n="contact_austin_label">Austin HQ</h3>
+                <p class="mt-1 text-slate-700">(512) 340-8800</p>
+              </article>
+              <article class="panel-hover rounded-xl border border-slate-200 bg-white p-4">
+                <h3 class="font-bold text-slate-900" data-i18n="contact_miami_label">Miami</h3>
+                <p class="mt-1 text-slate-700">(305) 510-7700</p>
+              </article>
+              <article class="panel-hover rounded-xl border border-slate-200 bg-white p-4">
+                <h3 class="font-bold text-slate-900" data-i18n="contact_uk_label">UK (London)</h3>
+                <p class="mt-1 text-slate-700">+44 20 7946 0100</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="border-t border-slate-200 bg-white" role="contentinfo">
+        <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-6 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+          <p data-i18n="footer_copyright">© 2025 HealthCore. All rights reserved.</p>
+          <p class="font-semibold text-slate-700">LinkedIn | Facebook | Instagram</p>
+        </div>
+      </footer>
+    </div>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "MedicalOrganization",
+            "@id": "https://www.healthcore.com/#organization",
+            "name": "HealthCore",
+            "description": "Outpatient healthcare network offering primary care, specialist consultations, chronic disease management, and preventive health programmes.",
+            "url": "https://www.healthcore.com",
+            "foundingDate": "2011",
+            "logo": "https://www.healthcore.com/logo.png",
+            "availableLanguage": ["English", "Spanish"],
+            "areaServed": ["US", "GB"],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Austin",
+              "addressRegion": "Texas",
+              "addressCountry": "US"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+1-512-340-8800",
+              "contactType": "patient services",
+              "availableLanguage": ["English", "Spanish"]
+            },
+            "sameAs": [
+              "https://linkedin.com/company/healthcore",
+              "https://facebook.com/healthcore",
+              "https://instagram.com/healthcore"
+            ]
+          },
+          {
+            "@type": "MedicalClinic",
+            "name": "HealthCore Austin Central",
+            "telephone": "+1-512-340-8800",
+            "openingHours": ["Mo-Fr 07:00-20:00", "Sa 09:00-15:00"],
+            "parentOrganization": { "@id": "https://www.healthcore.com/#organization" }
+          },
+          {
+            "@type": "MedicalClinic",
+            "name": "HealthCore Austin North",
+            "telephone": "+1-512-340-8810",
+            "openingHours": ["Mo-Fr 08:00-19:00"],
+            "parentOrganization": { "@id": "https://www.healthcore.com/#organization" }
+          },
+          {
+            "@type": "MedicalClinic",
+            "name": "HealthCore San Antonio",
+            "telephone": "+1-210-720-4400",
+            "openingHours": ["Mo-Fr 08:00-18:00", "Sa 09:00-13:00"],
+            "parentOrganization": { "@id": "https://www.healthcore.com/#organization" }
+          },
+          {
+            "@type": "MedicalClinic",
+            "name": "HealthCore Miami",
+            "telephone": "+1-305-510-7700",
+            "openingHours": ["Mo-Fr 07:00-20:00", "Sa 09:00-16:00"],
+            "parentOrganization": { "@id": "https://www.healthcore.com/#organization" }
+          },
+          {
+            "@type": "MedicalClinic",
+            "name": "HealthCore Orlando",
+            "telephone": "+1-407-892-6600",
+            "openingHours": ["Mo-Fr 08:00-18:00"],
+            "parentOrganization": { "@id": "https://www.healthcore.com/#organization" }
+          },
+          {
+            "@type": "MedicalClinic",
+            "name": "HealthCore Atlanta",
+            "telephone": "+1-404-330-9900",
+            "openingHours": ["Mo-Fr 08:00-19:00"],
+            "parentOrganization": { "@id": "https://www.healthcore.com/#organization" }
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>
